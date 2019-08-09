@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageItem.aspx.cs" Inherits="RentMyWrox.Admin.ManageItem" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebFormsMasterPage.master" AutoEventWireup="true" CodeBehind="ManageItem.aspx.cs" Inherits="RentMyWrox.Admin.ManageItem" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-    <link rel="stylesheet" runat="server" media="screen" href="~/Content/StyleSheet1.css" />
+    <%--<link rel="stylesheet" runat="server" media="screen" href="~/Content/StyleSheet1.css" />--%>
 
-    <div style="margin-top: 100px;">
+   <%-- <div style="margin-top: 100px;">
         <div class="dataentry">
             <asp:Label runat="server" Text="Name" AssociatedControlID="tbName" />
             <asp:TextBox runat="server" ID="tbName" />
@@ -32,6 +32,6 @@
             AssociatedControlID="tbAcquiredDate" />
         <asp:TextBox runat="server" ID="tbAcquiredDate" />
     </div>
-    <asp:Button Text="Save Item" runat="server" OnClick="SaveItem_Clicked" />
+    <asp:Button Text="Save Item" runat="server" OnClick="SaveItem_Clicked" />--%>
 
 </asp:Content>
