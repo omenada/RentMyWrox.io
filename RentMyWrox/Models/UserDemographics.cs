@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,9 +10,9 @@ namespace RentMyWrox.Models
     {
         public UserDemographics()
         {
-            Hobbies = new List<string>();
+            Hobbies = new List<Hobby>();
         }
-
+        [Key]
         public DateTime Birthdate { get; set; }
 
         public string Gender { get; set; }
@@ -24,6 +25,6 @@ namespace RentMyWrox.Models
 
         public int TotalPeopleInHome { get; set; }
 
-        public List<string> Hobbies { get; set; }
+        public List<Hobby> Hobbies { get; set; }
     }
 }

@@ -12,7 +12,12 @@ namespace RentMyWrox.Controllers
         // GET: UserDemographics
         public ActionResult Index()
         {
-            return View();
+            using (RentMyWroxContext context = new RentMyWroxContext())
+            {
+                var list = context.UserDemographics.OrderBy(x => x.Birthdate).ToList();
+                return View(list);
+            }
+            //return View();
         }
 
         // GET: UserDemographics/Details/5
@@ -46,15 +51,18 @@ namespace RentMyWrox.Controllers
         // GET: UserDemographics/Edit/5
         public ActionResult Edit(int id)
         {
-            var model = new UserDemographics
-            {
-                Gender = "Male",
-                Birthdate = new DateTime(2000, id, id),
-                MaritalStatus = "Married",
-                OwnHome = true,
-                TotalPeopleInHome = id,
-                Hobbies = new List<string> { "Gardening", "Other" }
-            };
+
+            //var model = new UserDemographics
+            //{
+            //    Gender = "Male",
+            //    Birthdate = new DateTime(2000, id, id),
+            //    MaritalStatus = "Married",
+            //    OwnHome = true,
+            //    TotalPeopleInHome = id,
+            //    Hobbies = new List<string> { "Gardening", "Other" }
+            //};
+            //return View("Manage", model);
+            var model = new UserDemographics();
             return View("Manage", model);
 
         }
