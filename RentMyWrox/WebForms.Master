@@ -14,7 +14,8 @@
     <div id="header">
     </div>
     <div id="nav">
-        Navigation content here
+        <asp:Menu ID="LeftNavigation" runat="server" DataSourceID="SiteMapDataSource1" IncludeStyleBlock="false"></asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
     </div>
     <div id="section">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        

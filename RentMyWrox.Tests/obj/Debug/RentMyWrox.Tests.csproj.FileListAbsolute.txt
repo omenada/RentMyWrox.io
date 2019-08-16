@@ -51,3 +51,4 @@ C:\Users\William\Google Drive\Wrox_Book\RentMyWrox\RentMyWrox.Tests\bin\Debug\Sy
 C:\Users\William\Google Drive\Wrox_Book\RentMyWrox\RentMyWrox.Tests\obj\Debug\RentMyWrox.Tests.csprojResolveAssemblyReference.cache
 C:\Users\William\Google Drive\Wrox_Book\RentMyWrox\RentMyWrox.Tests\obj\Debug\RentMyWrox.Tests.dll
 C:\Users\William\Google Drive\Wrox_Book\RentMyWrox\RentMyWrox.Tests\obj\Debug\RentMyWrox.Tests.pdb
+C:\Users\User\Downloads\RentMyWrox_Chapter9\RentMyWrox.Tests\obj\Debug\RentMyWrox.Tests.csproj.CoreCompileInputs.cache
